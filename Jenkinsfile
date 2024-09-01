@@ -19,7 +19,7 @@ pipeline {
       }
       stage('Build') {
          steps {
-            sh '''mvn clean package'''
+            sh '''mvn Update Jenkinsfile with local settings for maven repo clean package'''
          }
       }
 
