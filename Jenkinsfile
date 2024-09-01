@@ -19,7 +19,7 @@ pipeline {
       }
       stage('Build') {
          steps {
-            sh '''mvn Update Jenkinsfile with local settings for maven repo clean package'''
+            sh '''mvn -s /var/jenkins_home/repo/settings-online.xml -gs /var/jenkins_home/repo/settings-online.xml clean package'''
          }
       }
 
